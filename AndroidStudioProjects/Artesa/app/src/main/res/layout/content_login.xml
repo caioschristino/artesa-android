@@ -12,36 +12,8 @@
     tools:context="com.example.caios.mvpexample.Login.LoginActivity"
     tools:showIn="@layout/activity_login">
 
-    <EditText
-        android:id="@+id/username"
+    <com.v2.artesa.Adapter.Component.NonSwipeableViewPager
+        android:id="@+id/myviewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@mipmap/ic_launcher"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical"
-        android:hint="@string/user_name" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@mipmap/ic_launcher"
-        android:drawablePadding="8dp"
-        android:gravity="center_vertical"
-        android:hint="@string/password"
-        android:inputType="textPassword" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableRight="@mipmap/ic_launcher"
-        android:text="@string/log_in" />
-
-    <ProgressBar
-        android:id="@+id/progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:visibility="gone" />
+        android:layout_height="match_parent" />
 </LinearLayout>

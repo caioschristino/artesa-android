@@ -1,15 +1,21 @@
 package com.v2.artesa.Service.Request;
 
-import com.v2.artesa.Model.Response;
+import com.v2.artesa.Model.Person;
 
 /**
  * Created by CaioSChristino on 07/10/16.
  */
 
 public class ResultRequest {
-    private Response response;
+    private String token;
 
-    public Response getResponse() {
-        return response;
+    private Person person;
+
+    public String getToken() {
+        return token;
+    }
+
+    public Person getPerson() {
+        return person;
     }
 }

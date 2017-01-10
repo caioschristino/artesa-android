@@ -5,17 +5,15 @@ package com.v2.artesa.Model;
  */
 
 public class Response {
-    private User user;
+    private String token;
 
-    public Response(){
-        Status status = new Status("Ativo");
-        Contact telefone = new Contact("(11) 97190-0161");
-        Contact email = new Contact("caioschristino@gmail.com");
+    private Person person;
 
-        this.user = new User("Caio Sanchez", email, "1234", telefone, "key_fac", "key_g", status);
+    public String getToken() {
+        return token;
     }
 
-    public User getUser() {
-        return user;
+    public Person getPerson() {
+        return person;
     }
 }

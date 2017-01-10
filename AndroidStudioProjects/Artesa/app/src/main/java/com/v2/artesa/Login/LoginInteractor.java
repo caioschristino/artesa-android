@@ -1,23 +1,26 @@
 package com.v2.artesa.Login;
 
-import com.v2.artesa.Model.Response;
-import com.v2.artesa.Service.Request.ResultRequest;
+import com.facebook.AccessToken;
+import com.v2.artesa.Model.Person;
 
 /**
  * Created by caios on 6/26/16.
  */
 public interface LoginInteractor {
 
+    AccessToken loggedInFacebook();
+
     interface OnLoginFinishedListener {
-        void onUsernameError();
+        void onSuccess();
 
-        void onPasswordError();
-
-        void onSuccess(Response response);
+        void onIgnoreSuccess();
 
         void onError(String s);
     }
 
-    void login(String username, String password, OnLoginFinishedListener listener);
+    void login(String username, String password, final OnLoginFinishedListener listener);
 
+    void login(AccessToken token, final OnLoginFinishedListener listener);
+
+    void create(Person person, final OnLoginFinishedListener listener);
 }

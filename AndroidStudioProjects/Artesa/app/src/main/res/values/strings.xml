@@ -1,14 +1,54 @@
 <resources>
-    <string name="app_name">Artesa</string>
+    <string name="app_name">Arte:Sa</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
 
     <string name="action_settings">Settings</string>
     <string name="user_name">username</string>
     <string name="password">password</string>
+    <string name="email">email</string>
     <string name="log_in">Log in</string>
+    <string name="create_acc">Create Account</string>
+    <string name="forgot_acc">Forgot Password</string>
     <string name="username_error">Username cannot be empty</string>
     <string name="password_error">Password cannot be empty</string>
     <string name="title_activity_main">arte:Sã</string>
+    <string name="facebook_app_id">650360035168598</string>
+    <string name="welcome">Welcome!</string>
+    <string name="log_in_with_facebook">Log in with Facebook</string>
+    <string name="permissions">Permissions</string>
+    <string name="label_facebook_login">Facebook Login</string>
+    <string name="label_account_kit_login">Account Kit Login</string>
+    <string name="de_authorize_app">De-authorize App</string>
+    <string name="failed_to_deauth">"failed to deauthorize app %1s"</string>
+    <string name="app_not_logged_in">App not logged in</string>
+    <string name="success">SUCCESS</string>
+    <string name="cancel">CANCEL</string>
+    <string name="error_create">Error to create account</string>
+
+
+
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="finish">Submit</string>
+    <string name="review">Review</string>
+
+    <string name="label_your_name">Name</string>
+    <string name="label_your_email">Email</string>
+    <string name="hint_your_name">e.g. Larry</string>
+    <string name="hint_your_email">Optional</string>
+
+    <string name="submit_confirm_message">Place the order with the deli? You will receive an email
+        confirmation.</string>
+    <string name="submit_confirm_button">Place order</string>
+    <string name="terms">Algum tipo de termo falando sobre o tipo de genero</string>
+    <string name="accept_terms">Li, concordo e aceito</string>
+    <string name="phone">phone</string>
+    <string name="wait_login">waiting...</string>
+    <string name="offiline">You can login while offline</string>
+    <string name="error_sinc" >Error to sinc facebook account</string>
+
 </resources>
