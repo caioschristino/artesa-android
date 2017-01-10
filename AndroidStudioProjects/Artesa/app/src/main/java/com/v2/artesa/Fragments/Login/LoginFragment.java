@@ -73,14 +73,13 @@ public class LoginFragment extends mFragment implements View.OnClickListener {
 
                                 try {
                                     String id = loginResult.getAccessToken().getUserId();
-                                    String fbToken = loginResult.getAccessToken().getToken();
                                     String password = randomString(8);
                                     String name = object.getString("name");
                                     String email = object.getString("email");
                                     String gender = object.getString("gender");
                                     String birthday = object.getString("birthday");
 
-                                    Person person = new Person(id, fbToken, name, email, password, gender, birthday);
+                                    Person person = new Person(id, name, email, password, gender, birthday);
                                     getPresenter().cacheAccount(person);
                                 } catch (JSONException e) {
                                     e.printStackTrace();

@@ -74,7 +74,7 @@ public class ReviewFragment extends mFragment implements View.OnClickListener {
             Person p;
             Person person = getPresenter().getCacheAccount();
             if (!TextUtils.isEmpty(person.getIdIn())) {
-                p = new Person(person.getIdIn(), person.getFbToken(), username.getText().toString(),
+                p = new Person(person.getIdIn(), username.getText().toString(),
                         email.getText().toString(), person.getPassword(), person.getGender(), person.getBirthday());
             } else {
                 p = new Person(username.getText().toString(), email.getText().toString(), password.getText().toString(), gender);

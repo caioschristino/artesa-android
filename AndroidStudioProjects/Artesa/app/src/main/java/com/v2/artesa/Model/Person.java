@@ -10,12 +10,10 @@ public class Person {
     private String name;
     private String email;
     private String password;
-    private String phone;
     private boolean acceptTerms;
     private String gender;
     private String idIn;
     private String birthday;
-    private String fbToken;
 
     public Person() {
     }
@@ -39,10 +37,9 @@ public class Person {
         this.gender = gender;
     }
 
-    public Person(String idIn, String fbToken, String name, String email, String password, String gender, String birthday) throws Exception {
+    public Person(String idIn, String name, String email, String password, String gender, String birthday) throws Exception {
         if (TextUtils.isEmpty(idIn)
                 || TextUtils.isEmpty(idIn)
-                || TextUtils.isEmpty(fbToken)
                 || TextUtils.isEmpty(name)
                 || TextUtils.isEmpty(email)
                 || TextUtils.isEmpty(password)
@@ -52,7 +49,6 @@ public class Person {
         }
 
         this.idIn = idIn;
-        this.fbToken = fbToken;
         this.name = name;
         this.email = email;
         this.password = password;
@@ -72,10 +68,6 @@ public class Person {
         return email;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
     public String getGender() {
         return gender;
     }
@@ -86,10 +78,6 @@ public class Person {
 
     public String getIdIn() {
         return idIn;
-    }
-
-    public String getFbToken() {
-        return fbToken;
     }
 
     public String getBirthday() {

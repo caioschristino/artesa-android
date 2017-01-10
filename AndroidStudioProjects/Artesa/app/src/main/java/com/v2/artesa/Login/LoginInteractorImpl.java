@@ -75,7 +75,7 @@ public class LoginInteractorImpl implements LoginInteractor {
                 public void onResponse(Call<ResultRequest> call, Response<ResultRequest> response) {
                     if (response.isSuccessful()) {
                         listener.onSuccess();
-                    } else if (response.code() == 401) {
+                    } else {
                         new GraphRequest(token,
                                 "/me/permissions/",
                                 null,
@@ -108,7 +108,7 @@ public class LoginInteractorImpl implements LoginInteractor {
 
             error = true;
         }
-        String a = GsonUtils.getJsonFromClass(person);
+
         if (!error) {
             service.create(person).enqueue(new Callback<ResultRequest>() {
                 @Override
