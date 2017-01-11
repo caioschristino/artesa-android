@@ -19,11 +19,11 @@ public interface IRetrofitService {
     String SERVICE_ENDPOINT = "https://shrouded-sierra-90668.herokuapp.com";
 
     @FormUrlEncoded
-    @POST("/authentication")
+    @POST("/authentication/params")
     Call<ResultRequest> auth(@Field("email") String username, @Field("password") String password);
 
     @FormUrlEncoded
-    @POST("/authentication")
+    @POST("/authentication/token")
     Call<ResultRequest> auth(@Field("idIn") String idIn);
 
     @POST("/user/add")
